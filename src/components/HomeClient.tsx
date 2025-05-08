@@ -10,8 +10,6 @@ import {
   fadeUpVariant,
   staggerContainerVariant,
   scaleFadeVariant,
-  slideInLeftVariant,
-  slideInRightVariant,
 } from "~/lib/animations";
 
 function handleButtonLink(
@@ -179,38 +177,3 @@ export default function HomeClient() {
     </PageTransition>
   );
 }
-
-const technologies = [
-  {
-    name: "React & Next.js",
-    description: "Modern full stack web development",
-  },
-  {
-    name: "TypeScript",
-    description: "Type-safe JavaScript development",
-  },
-  {
-    name: "Node.js",
-    description: "Backend development and API creation",
-  },
-  {
-    name: "Tailwind CSS",
-    description: "Utility-first CSS framework for rapid UI development",
-  },
-  {
-    name: "PostgreSQL",
-    description: "Relational database management",
-  },
-  {
-    name: "Git",
-    description: "Version control and collaboration",
-  },
-  {
-    name: "Go",
-    description: "Fast, asynchronous backend with goroutines",
-  },
-  {
-    name: "Communication",
-    description: "I am fantastic at communicating with others",
-  },
-];

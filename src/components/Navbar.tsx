@@ -5,11 +5,9 @@ import { motion } from "framer-motion";
 
 import {
   NavigationMenu,
-  NavigationMenuContent,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-  NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "~/components/ui/navigation-menu";
 import {
@@ -64,9 +62,7 @@ export function Navbar() {
                         : "text-foreground/60",
                     )}
                   >
-                    <Link href={item.href}>
-                      {item.title}
-                    </Link>
+                    <Link href={item.href}>{item.title}</Link>
                   </NavigationMenuLink>
                 </NavigationMenuItem>
               ))}
