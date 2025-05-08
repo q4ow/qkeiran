@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <div className="text-foreground bg-background">
+      <div className="text-foreground bg-background flex justify-center items-center">
         <h1 className="text-4xl">qkeiran</h1>
       </div>
     </>
