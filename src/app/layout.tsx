@@ -1,7 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { ThemeProvider } from "~/components/ThemeProvider";
-import { Navbar } from "~/components/Navbar";
-import { AnimatePresence } from "framer-motion";
+import { ClientLayout } from "~/components/ClientLayout";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -31,17 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className="antialiased">
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <Navbar />
-          <AnimatePresence mode="wait">
-            {children}
-          </AnimatePresence>
-        </ThemeProvider>
+        <ClientLayout>{children}</ClientLayout>
       </body>
     </html>
   );
