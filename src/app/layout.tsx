@@ -1,5 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { ThemeProvider } from "~/components/ThemeProvider";
+import { Navbar } from "~/components/Navbar";
+import { AnimatePresence } from "framer-motion";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -35,7 +37,10 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <Navbar />
+          <AnimatePresence mode="wait">
+            {children}
+          </AnimatePresence>
         </ThemeProvider>
       </body>
     </html>
